@@ -103,6 +103,13 @@ p, td, li {
         $("#div_ctr4").html("Abyss Trail to Helms Lake near Grant");
       })
 
+        // toggle the photo on and off
+       $("#toggleLookupphoto").click(function () {
+         console.log("toggle the photo");
+         $("#aspensabyss").fadeToggle(1000);
+    });
+        
+         
  // closing the document.ready
       })
     </script>
@@ -204,7 +211,7 @@ p, td, li {
   <img id="aspensabyss" src="aspensabyss.jpg" />
         <p class="caption">Aspens Along Abyss Lake Hike</p>
         <p class="caption">Photo by author</p>
-         
+         <button id="Lookupphoto">Toggle the photo on/off.</button>
         </div>
         
   </body>
