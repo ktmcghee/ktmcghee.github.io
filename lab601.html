@@ -103,6 +103,25 @@ p, td, li {
         $("#div_ctr4").html("Abyss Trail to Helms Lake near Grant");
       })
 
+
+         $("#appear").click(function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Reg is like warm honey.");
+        });
+       
+  
+                       
+      
+
+        // toggle the photo on and off
+       $("#toggleLookupphoto").click(function () {
+         console.log("toggle the photo");
+         $("#aspensabyss").fadeToggle(1000);
+    });
+       
+    
+         
  // closing the document.ready
       })
     </script>
@@ -191,6 +210,11 @@ p, td, li {
       Miles 4 and 5 are steeper with switchbacks. There is a great view of Bierstadt and other peaks. It is close to Denver and easily accessible. </p>
         </div>
 
+      <div id="hidden_text">
+     <button id="appear">Click here to see the hidden text!</button>
+      </div>
+
+
     <div id="Lookupphoto">
 
  <img src="aspenup.jpg " alt ="Looking up at Aspens">
@@ -204,8 +228,10 @@ p, td, li {
   <img id="aspensabyss" src="aspensabyss.jpg" />
         <p class="caption">Aspens Along Abyss Lake Hike</p>
         <p class="caption">Photo by author</p>
-         
+
+      <button id="toggleLookupphoto">Toggle the photo on/off.</button>
         </div>
-        
+
+    
   </body>
 </html>
