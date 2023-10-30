@@ -108,7 +108,16 @@ p, td, li {
          console.log("toggle the photo");
          $("#aspensabyss").fadeToggle(1000);
     });
-        
+     
+       $("#appear").click( function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Reg is like warm honey.");
+        });
+…
+
+
+
          
  // closing the document.ready
       })
@@ -214,6 +223,11 @@ p, td, li {
 
       <button id="toggleLookupphoto">Toggle the photo on/off.</button>
         </div>
-        
+
+<div id="hidden_text">
+   <button id="appear">Tickle me!</button>
+</div>
+
+    
   </body>
 </html>
