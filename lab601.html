@@ -44,8 +44,6 @@ p, td, li {
     a: visited {background-color:CYAN #00FFFF; }
     a: link {background-color: Beige #F5F5DC; }
     a: hover {background-color: Deep Pink #FF1493; }
-
-  
   
   #hikesneed {
     background-color: OldLace;
@@ -72,47 +70,44 @@ p, td, li {
       color: black;
     }
     
-
   </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-    <script>
-      $(document).ready(function() {
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+ <script>
+     $(document).ready(function() {
         // put the javascript here
-          console.log("started javascript");
-      
+      console.log("started javascript");
+
         // do this when we click on the clicktoreveal1 button
       $("#clicktoreveal1").click(function(){
         // run this when I click on the button
-            console.log("clicked on the 1st button.");
-        $("#clicktoreveal1").html("Booth Lake in Eagles Nest Wilderness near Vail");
+        console.log("clicked on the 1st button.");
+        $("#div_ctr1").html("Booth Lake in Eagles Nest Wilderness near Vail");
       });
-      
+       
       // do this when we click on the clicktoreveal2 button
       $("#clicktoreveal2").click(function(){
         // run this when I click on the button
-            console.log("clicked on the 2nd button.");
-        $("#clicktoreveal2).html("Navajo Peak in Brainard Lake Recreation Area");
+        console.log("clicked on the 2nd button.");
+        $("#div_ctr2").html("Navajo Peak in Brainard Lake Recreation Area");
       });
-      
       // do this when we click on the clicktoreveal3 button
       $("#clicktoreveal3").click(function(){
         // run this when I click on the button
         console.log("clicked on the 3rd button.");
-        $("#clicktoreveal3").html("Jasper Lake Via Devil's Thumb Trail near Nederland");
+        $("#div_ctr3").html("Jasper Lake Via Devil's Thumb Trail near Nederland");
       });
-      
       //do this when we click on the clicktoreveal4 button
       $("#clicktoreveal4").click(function(){
         // run this when I click on the button
         console.log("clicked on the 4th button.");
-        $("#clicktoreveal4").html("Abyss Trail to Helms Lake near Grant");
-      });
-        // closing the document.ready
-      });
-        
-  
+        $("#div_ctr4").html("Abyss Trail to Helms Lake near Grant");
+      })
+
+ // closing the document.ready
+      })
     </script>
-  </head>
+    </head>
+  
   <body>
     
   <div id="container">
@@ -156,28 +151,30 @@ p, td, li {
       <th>Notes</th>
     </tr>   
     <tr>
-          <td><button id = "clicktoreveal1">Click to reveal...</button></td>
+          <td><div id="div_ctr1"><button id = "clicktoreveal1">Click to reveal...</button></div></td>
           <td>9 miles</td>
           <td>3,057 feet</td>
           <td>4.8 stars</td>            
       <td>No parking at trailhead. Mandatory shuttle.</td>
      </tr>    
       <tr>
-          <td><button id = "clicktoreveal2">Click to reveal...</button></td>
+          <td><div id="div_ctr2"><button id ="clicktoreveal2">Click to reveal...</button></div></td>
           <td>10 miles</td>
           <td>2,887 feet</td>
           <td>4.8 stars</td>
           <td>Requires timed entry</td>
       </tr>
-      <tr>
-          <td><button id = "clicktoreveal3">Click to reveal...</button></td>
+    
+      <tr>  
+  <td><div id="div_ctr3"><button id ="clicktoreveal3">Click to reveal...</button></div></td>
   <td>10 miles</td>
   <td>1,942 feet
   <td>4.7 stars</td>
   <td>Parking very limited. Shuttle encouraged.</td>
     </tr>
+    
     <tr>
-      <td><button id = "clicktoreveal4">Click to reveal...</button></td>
+     <td><div id="div_ctr4"><button id ="clicktoreveal4">Click to reveal...</button></div></td>
       <td>12 miles</td>
       <td>2,404 feet</td>
       <td>4.7 stars</td>
@@ -194,8 +191,6 @@ p, td, li {
       Miles 4 and 5 are steeper with switchbacks. There is a great view of Bierstadt and other peaks. It is close to Denver and easily accessible. </p>
         </div>
 
-
-    
     <div id="Lookupphoto">
 
  <img src="aspenup.jpg " alt ="Looking up at Aspens">
@@ -209,11 +204,6 @@ p, td, li {
   <img id="aspensabyss" src="aspensabyss.jpg" />
         <p class="caption">Aspens Along Abyss Lake Hike</p>
         <p class="caption">Photo by author</p>
-     
-      
-      
-
-
          
         </div>
         
