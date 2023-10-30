@@ -75,36 +75,38 @@ p, td, li {
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
      <script>
   
-              $(document).ready( function() {
-                     // your code will go in here
-         
-         //do this when we click on the clicktoreveal1 button
-           $("#clicktoreveal1").click(function(); {
-             //run this when I click on this button
-             console.log("clicked on the 1st button.");
-             $("#clicktoreveal1").html("Booth Lake in Eagles Nest Wilderness near Vail");
-           });
+        $(document).ready( function() {
+            // your javascript code will go in here
+            console.log("started javascript");
 
-          //do this when we click on the clicktoreveal2 button
-           $("#clicktoreveal2").click(function(); {
-             //run this when I click on this button
-             console.log("clicked on the 2nd button.");
-             $("#clicktoreveal2").html("Navajo Peak in Brainard Lake Recreation Area");
-           });
+        // do this when we click on the clicktoreveal1 button
+        $("#clicktoreveal1").click(function(){
+        // run this when I click on the button
+        console.log("clicked on the 1st button.");
+        $("#clicktoreveal1").html("Booth Lake in Eagles Nest Wilderness near Vail");
+      });
+          
+      // do this when we click on the clicktoreveal2 button
+      $("#clicktoreveal2").click(function(){
+        // run this when I click on the button
+        console.log("clicked on the 2nd button.")
+        $("#clicktoreveal2").html("Navajo Peak in Brainard Lake Recreation Area");
+      });
+          
+      // do this when we click on the clicktoreveal3 button
+      $("#clicktoreveal3").click(function(){
+        // run this when I click on the button
+        console.log("clicked on the 3rd button.")
+        $("#clicktoreveal3").html("Jasper Lake Via Devil's Thumb Trail near Nederland");
+      });
+          
+      //do this when we click on the clicktoreveal4 button
+      $("clicktoreveal4").click(function(){
+        // run this when I click on the button
+        console.log("clicked on the 4th button.")
+        $("#clicktoreveal4").html("Abyss Trail to Helms Lake near Grant");
+      });
 
-           //do this when we click on the clicktoreveal3 button
-         $("#clicktoreveal3"). click(function(); {
-           //run this when I click on this button
-           console.log("clicked on the 3rd button.");
-           $("#clicktoreveal3").html("Jasper Lake Via Devil's Thumb Trail near Nederland");
-         });
-
-         //do this when we click on the clicktoreveal4 button
-          $("#clicktoreveal4"). click(function(); {
-           //run this when I click on this button
-            console.log ("clicked on the 4th button.")
-           $("#clicktoreveal4").html("Abyss Trail to Helms Lake near Grant");
-         });
 
  // closing the document.ready
       });
