@@ -33,7 +33,39 @@
     radius: 80
     }).addTo(map);
       circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel");
+======================
+  var popup = L.popup([47.52422,13.48168]);
+var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" alt = "Climbing Ladder on Trip Advisor">' height"150px";  width="150px"/>';
+  <img id="aspensabyss" src="aspensabyss.jpg" />
+        <p class="caption">Aspens Along Abyss Lake Hike</p>
+        <p class="caption">Photo by author</p>
 
+
+
+  
+=============================
+var popup = L.popup();
+var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick);
+  ----
+    var popup = L.popup();
+
+var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" height="150px" width="150px"/>';
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+mymap.on('click', onMapClick);
+    
   </script>
 </body>
 </html>
