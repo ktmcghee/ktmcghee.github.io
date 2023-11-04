@@ -37,14 +37,16 @@
 ======================
   var popup = L.popup([47.52422,13.48168]);
 var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" alt = "Climbing Ladder on Trip Advisor">'; {Height: 20vh; width:20vw}
-  <img id="aspensabyss" src="aspensabyss.jpg" />
-        <p class="caption">Climber on the Sky Ladder</p>
-        <p class="caption">Photo by Tripadvisor</p>
-
-
-
-  
-=============================
+  function onMapClick(e) {
+    popup
+        .setLatLng(e.47.52422,13.48168)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+mymap.on('click', onMapClick);
+    
+    
+    
 var popup = L.popup();
 var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
 function onMapClick(e) {
