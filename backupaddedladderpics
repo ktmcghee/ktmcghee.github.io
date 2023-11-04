@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>Sky Ladder: Austria's Donnerkogel Klettersteig. My first leafletjs map.  </title>
+    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <style>
+      #map { Height: 85vh; width:85vw}
+    </style>
+  </head>
+
+<body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+      
+    <div id="map"></div>
+
+  <script>
+
+  var map = L.map("map").setView([47.524, 13.4815], 14);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 22,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+    var circle = L.circle([47.52428,13.48138], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.1,
+    radius: 80
+    }).addTo(map);
+      circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel");
+======================
+  var popup = L.popup([47.52422,13.48168]);
+var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" alt = "Climbing Ladder on Trip Advisor">'; {Height: 20vh; width:20vw}
+  function onMapClick(e) {
+    popup
+        .setLatLng(e.47.52422,13.48168)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+mymap.on('click', onMapClick);
+    
+    
+    
+var popup = L.popup();
+var photoImg = '<img src="https://static.pexels.com/photos/189349/pexels-photo-189349.jpeg" height="150px" width="150px"/>';
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick);
+  ----
+    var popup = L.popup();
+
+var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" height="150px" width="150px"/>';
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
+        .openOn(mymap);
+}
+mymap.on('click', onMapClick);
+    
+  </script>
+</body>
+</html>
