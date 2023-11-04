@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-      <title>Sky Ladder: Austria's Donnerkogel Klettersteig. My first leafletjs map.  </title>
+      <title>Sky Ladder: Austria's Donnerkogel Klettersteig. My first leaflet.js map.  </title>
     
      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -30,19 +30,27 @@
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.1,
-    radius: 80
+    radius: 70
     }).addTo(map);
       circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel");
 
-  var popup = L.popup([47.52422,13.48168]);
-var photoImg = '<img src="ClimbingLadder.trip.advisor.jpg" alt = "Climbing Ladder on Trip Advisor">'; {Height: 20vh; width:20vw}
-  function onMapClick(e) {
-    popup
-        .setLatLng(e.47.52422,13.48168)
-        .setContent("<center>My Photo </center>" + "</br>"+ photoImg)
-        .openOn(mymap);
-}
-mymap.on('click', onMapClick);
+    // Create Element
+    var div = L.DomUtil.create('div', 'my-div');
+    //Create marker bind popup with content and add to map
+    new L.Marker ([47.52423, 13.48164]), bindPopup(div).addto(map);
+
+  //Create img element and append to div
+    var img = L.DomUtil.create('img', 'my-img', div);
+    img.src = "/images/img_ClimbingLadder.trip.advisor.jpg"
+
+
+
+    
+  var popup = L.popup()
+    .setLatLng({[47.52422,13.48168]}
+    .setContent("<b>Browns Point, Tacoma, WA</b><br>Where I grew up!.")
+    .openOn(map);
+
     
     
     
