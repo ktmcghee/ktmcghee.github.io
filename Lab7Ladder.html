@@ -36,13 +36,13 @@
 
     var markup
     var marker = L. marker ([47.53306,13.47973])
-      marker.bindPopup("<b>Gablonzer Hütte</b<br>Hostel style lodging close to the hiking trail with vegan/vegetarian meals available.)
+      marker.bindPopup("<b>Gablonzer Hütte</b<br>Hostel style lodging close to the hiking trail with vegan/vegetarian meals available".).openPopup();
    
     var circle =  L.circle([47.5637, 13.6487], {
       color: 'purple',
       fillColor: '#923EF9',
       fillOpacity: 0.5,
-        radius: 50
+        radius: 100
     }).addTo(map);
         	circle.bindPopup("<b>Hallstatt Charnel House</b><br>An Austrian house of bones filled with hundreds of intricately painted skulls.").openPopup();
 
