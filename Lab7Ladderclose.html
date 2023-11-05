@@ -33,7 +33,7 @@
   <script>
 
     
-  var map = L.map('map').setView([47.524, 13.4815], 11);
+  var map = L.map('map').setView([47.524, 13.4815], 12);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -49,18 +49,18 @@ circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the gr
 
     
   var polygon = L.polygon([
-    [47.5348, 13.4983]
-  [47.533, 13.4722]
-  [47.5248, 13.4689]
-  [47.5157, 13.477]
-  [47.5196, 13.4923] 
-  [47.5301, 13.4965]
-  [47.535, 13.5014] 
+    [47.5348, 13.4983],
+  [47.533, 13.4722],
+  [47.5248, 13.4689],
+  [47.5157, 13.477],
+  [47.5196, 13.4923], 
+  [47.5301, 13.4965],
+  [47.535, 13.5014], 
     ]).addTo(map);
        polygon.bindPopup("Hiking area");
     
  var marker = L. marker ([47.53306,13.47973]).addTo(map);
-      marker.bindPopup("<b>Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available.");
+      marker.bindPopup("Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available");
   
 
    
