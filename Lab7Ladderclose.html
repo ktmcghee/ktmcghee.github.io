@@ -52,6 +52,11 @@
     radius: 300
     }).addTo(map);
       circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel");
+
+    var popup = L.popup()
+    .setLatLng([51.513, -0.09])
+    .setContent(".")
+    .openOn(map);
     
  var marker = L. marker ([47.53306,13.47973]).addTo(map);
       marker.bindPopup("<b>Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available.");
