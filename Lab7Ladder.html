@@ -1,1 +1,67 @@
 
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>Sky Ladder: Austria's Donnerkogel Klettersteig. My first leaflet.js map.</title>
+    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <style>
+      #map { Height: 80vh; width:80vw}
+    </style>
+  </head>
+  
+<body>
+
+  
+    <h2>Sky Ladder: Austria's Donnerkogel Klettersteig </h1>
+
+ <div id="Ladderphoto">
+<img src="ClimbLadderTripAdvisor.jpg" alt ="Climbing Ladder">
+        <p class="caption">Climbing the ladder</p>
+        <p class="caption">Photo from Trip Advisor at https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/80/e4/a8.jpg</p>
+ </div>
+  
+  <div></div>
+  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+      
+    <div id="map"></div>
+
+  <script>
+
+    
+  var map = L.map('map').setView([47.524, 13.4815], 12);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+      var polygon = L.polygon([
+    [47.5348, 13.4983],
+  [47.533, 13.4722],
+  [47.5248, 13.4689],
+  [47.5157, 13.477],
+  [47.5196, 13.4923],
+        [47.5307,13.4918], 
+    ]).addTo(map);
+       polygon.bindPopup("Hiking area");
+    
+    var circle = L.circle([47.52428,13.48138], {
+    color: 'fuschia',
+    fillColor: '#f0f',
+    fillOpacity: 0.6,
+    radius: 100
+    }).addTo(map);
+circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel.");    
+ 
+    
+ var marker = L. marker ([47.53306,13.47973]).addTo(map);
+      marker.bindPopup("Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available");
+  
+
+   var marker = L. marker ([47.53310,13.49654]).addTo(map);
+    marker.bindpopup("Gosaukammbahn, mountain cable car station");
