@@ -39,16 +39,7 @@
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-    var circle = L.circle([47.52428,13.48138], {
-    color: 'fuschia',
-    fillColor: '#f0f',
-    fillOpacity: 0.6,
-    radius: 100
-    }).addTo(map);
-circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel.");
-
-    
-  var polygon = L.polygon([
+      var polygon = L.polygon([
     [47.5348, 13.4983],
   [47.533, 13.4722],
   [47.5248, 13.4689],
@@ -58,6 +49,15 @@ circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the gr
   [47.535, 13.5014], 
     ]).addTo(map);
        polygon.bindPopup("Hiking area");
+    
+    var circle = L.circle([47.52428,13.48138], {
+    color: 'fuschia',
+    fillColor: '#f0f',
+    fillOpacity: 0.6,
+    radius: 100
+    }).addTo(map);
+circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the ground, stretching over the gorge of the Grosser Donnerkogel.");    
+ 
     
  var marker = L. marker ([47.53306,13.47973]).addTo(map);
       marker.bindPopup("Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available");
