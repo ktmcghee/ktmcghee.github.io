@@ -61,9 +61,14 @@ circle.bindPopup("Austria's 140 feet long “Sky Ladder” 2,296 feet off the gr
     
  var marker = L. marker ([47.53306,13.47973]).addTo(map);
       marker.bindPopup("Gablonzer Hütte: Hostel style lodging close to the hiking trail with vegan/vegetarian meals available");
-  
 
-   var marker = L. marker ([47.53310,13.49654]).addTo(map);
+      var popup = L.popup()
+    .setLatLng([[47.53310,13.49654])
+    .setContent("<b>gosaukammbahn</b><br>mountian cable car")
+    .openOn(map);
+
+
+   var marker = L. marker ([47.53311,13.49653]).addTo(map);
     marker.bindpopup("Gosaukammbahn: mountain cable car station");
 
     
