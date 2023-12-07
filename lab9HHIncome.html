@@ -74,14 +74,14 @@
 		
 //function to style my choropleth map
 		function style1(feature) {
-	d =feature.properties.PCT_POVERTY;
-			answer = d > 30 ? '#800026' : 
-				d > 20 ? '#DB0026' : 
-				d > 15 ? '#E31A1C' : 
-				d > 10 ? '#FC4E2A' : 
-				d > 5 ? '#FD8D3C' : 
-				d > 3 ? '#FEB24C' : 
-				d > 1 ? '#FED976' : 		
+	d =feature.properties.MED_HH_INCOME;
+			answer = d < 15000 ? '#800026' : 
+				d < 25000 ? '#DB0026' : 
+				d < 40000 ? '#E31A1C' : 
+				d < 60000 ? '#FC4E2A' : 
+				d < 85000 ? '#FD8D3C' : 
+				d < 110000 ? '#FEB24C' : 
+				d > 110000 ? '#FED976' : 		
 					'#FFEDA0';
 styleReturn = {
 	fillColor : answer,
@@ -102,8 +102,8 @@ styleReturn = {
 			acsdenver2021Layer = L.geoJSON(data, 
 						       {style: style1, 
 							onEachFeature: function(feature,layer){	
-								layer.bindPopup("Percent Poverty:" + 
-										feature.properties.PCT_POVERTY + '%');
+								layer.bindPopup("Median Househould Income:" + 
+										feature.properties.MED_HH_INCOME);
 										
 							}
 						       }
