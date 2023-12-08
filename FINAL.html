@@ -129,8 +129,7 @@ styleReturn = {
 		}
 			return styleReturn;
 		}
-
-		
+	
 		// let's add the Denver ACS data -- ##4 here
 	
 		$.getJSON('./acs_denver_2021.geojson', function(data) {
@@ -181,14 +180,14 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
-		
+	
 
 $("#appear").click(function() {
            // if someone clicks on appear, this runs!
            console.log("someone clicked on button appear.");
          $("#hidden_text").text("Katie McGhee");
-	
 
+	
 
 		
 	// end document ready
