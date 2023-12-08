@@ -16,32 +16,40 @@
 	<style>
 		html, body {
 			height: 100%;
-			margin: 20px;
+			margin: 0;
 			background-color: #95AFC2;
 		}
-		#map { width: 90%; height: 60%;
-		     }
-	
+		#map { 
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+			height: 60%; 
+		}
+			
+		#header {
+			width: 100%;
+			height:100px;
+			margin: auto;
+			align: center;
+		}
+
+		
 		h1 { color: #000000;
 		     font-family: "Garamond", serif;
 		    font-weight: bold; 
 		     font-size: 30px;
 		    }
+		
 		h2 { color: #000000;
 		     font-family: "Garamond", serif;
 		     font-size: 20px;
+		   }
 		
 		p { font: serif 10px;
 		    color: #000000;
 		  }
 		
-	#header {
-			width: 100%;
-			margin: auto;
-			align: center;
-		}
-		
-		a { text-decoration: none; color: inherit; }
+		a { text-decoration: none; color: inherit; }	    
 
 	.legend {
     		line-height: 18px;
@@ -71,7 +79,6 @@ $("#appear").click(function() {
            console.log("someone clicked on button appear.");
          $("#hidden_text").text("I love raspberry macarons. I am on the quest for key lime macarons.");
         });
-       
 		// let's create our basemap! -- ##1 here
 
 		map = L.map('map').setView([39.73934, -104.99237], 11);
@@ -196,17 +203,13 @@ legend.addTo(map);
 </div>
 	
 	<div id="hidden_text">
-     <button id="appear">Click here to see the hidden text!</button>
+     <button id="appear">Map author</button>
       </div>
 
 	
 <div id="map"></div>
 	
 	
-
-
-	
-
 
 </body>
 </html>
