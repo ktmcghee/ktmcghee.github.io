@@ -13,18 +13,14 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-	
 	<style>
 		html, body {
 			height: 100%;
 			margin: 20px;
 			background-color: #95AFC2;
 		}
-
 		#map { width: 90%; height: 60%;
 		     }
-		
-		
 	
 		h1 { color: #000000;
 		     font-family: "Garamond", serif;
@@ -47,23 +43,20 @@
 		
 		a { text-decoration: none; color: inherit; }
 
-
-		.legend {
-    line-height: 18px;
-    color: #555;
-    background-color: #eeeeee;
-    padding: 2px;
-}
-.legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.4,
-	    
-}
+	.legend {
+    		line-height: 18px;
+    		color: #555;
+    		background-color: #eeeeee;
+    		padding: 2px;
+		}
+	.legend i {
+   		 width: 18px;
+    		height: 18px;
+    		float: left;
+    		margin-right: 8px;
+    		opacity: 0.4,
+	    }
  
-		
 	</style>
 
 <script>
@@ -135,10 +128,10 @@ styleReturn = {
 		$.getJSON('./acs_denver_2021.geojson', function(data) {
 			//convert the file (data) into a layer
 			acsdenver2021Layer = L.geoJSON(data, 
-						       {style: style1, 
-							onEachFeature: function(feature,layer){	
-								layer.bindPopup("Median Househould Income:" + 
-										feature.properties.MED_HH_INCOME);
+					{style: style1, 
+					onEachFeature: function(feature,layer){	
+						layer.bindPopup("Median Househould Income:" + 
+							feature.properties.MED_HH_INCOME);
 										
 							}
 						       }
