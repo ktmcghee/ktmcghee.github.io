@@ -25,7 +25,7 @@
 		     }
 		
 		
-		
+	
 		h1 { color: #000000;
 		     font-family: "Garamond", serif;
 		    font-weight: bold; 
@@ -76,8 +76,9 @@
 $("#appear").click(function() {
            // if someone clicks on appear, this runs!
            console.log("someone clicked on button appear.");
-         $("#hidden_text").text("Map by Katie McGhee");
+         $("#hidden_text").text("I love raspberry macarons. I am on the quest for key lime macarons.");
         });
+       
 		// let's create our basemap! -- ##1 here
 
 		map = L.map('map').setView([39.73934, -104.99237], 11);
@@ -202,7 +203,7 @@ legend.addTo(map);
 </div>
 	
 	<div id="hidden_text">
-     <button id="appear">Map author</button>
+     <button id="appear">Click here to see the hidden text!</button>
       </div>
 
 	
