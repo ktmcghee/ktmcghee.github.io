@@ -180,6 +180,12 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+		
+		  $("#appear").click(function() {
+           // a click and an appear
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Katie McGhee");
+        });
 	
 		
 	// end document ready
@@ -198,6 +204,10 @@ legend.addTo(map);
 </div>
 	
 <div id="map"></div>
+	
+      <div id="hidden_text">
+     <button id="appear">Click for author.</button>
+      </div>
 	
 </body>
 </html>
