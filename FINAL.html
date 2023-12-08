@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+//GOOD
+	
 	<style>
 		html, body {
 			height: 100%;
@@ -38,7 +39,7 @@
 		
 		a { text-decoration: none; color: inherit; }
 
-
+//Good 2
 		.legend {
     line-height: 18px;
     color: #555;
@@ -52,15 +53,17 @@
     margin-right: 8px;
     opacity: 0.8;
 }
-
+ 
+		///GOOOD add something about money
 	</style>
-
+//GOOD GOOD DONE WITH THE STYLE
 <script>
 
         // the document ready wraps our javascript
 	// to make sure that everything loads in the 
 	// right order
 	$(document).ready(function() {
+		
 
 		// let's create our basemap! -- ##1 here
 
@@ -162,7 +165,13 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
-
+		
+$("#appear").click(function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("I love raspberry macarons. I am on the quest for key lime macarons.");
+        });
+		
 	// end document ready
 	});
 
@@ -176,6 +185,10 @@ legend.addTo(map);
 	<p>Data from <a href="https://denvergov.org/opendata/dataset/city-and-county-of-denver-american-community-survey-blk-grp-2017-2021">Denver Open Data</a></p>
 </div>
 <div id="map"></div>
+	
+	<div id="hidden_text">
+     <button id="appear">Click here to see the hidden text!</button>
+      </div>
 
 
 </body>
