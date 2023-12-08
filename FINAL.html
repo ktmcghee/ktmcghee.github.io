@@ -21,21 +21,29 @@
 			background-color: #95AFC2;
 		}
 		
-		
+		#header {
+			width: 100%;
+			margin: auto;
+			align: center;
+		}
 		
 		h1 { color: #000000;
 		     font-family: "Garamond", serif;
+		    font-weight: bold; 
 		     font-size: 30px;
 		    }
+		h2 { color: #000000;
+		     font-family: "Garamond", serif;
+		     font-size: 20px;
 		
 		p { font: serif 10px;
 		    color: #000000;
 		  }
 		
-		#header {
-			width: 100%;
-			margin: auto;
-			align: center;
+		html, body {
+			height: 100%;
+			margin: 20px;
+			background-color: #95AFC2;
 		}
 		#map { Height: 80vh; width:80vw}}
 		a { text-decoration: none; color: inherit; }
@@ -66,7 +74,11 @@
 	// right order
 	$(document).ready(function() {
 		
-
+$("#appear").click(function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Map by Katie McGhee");
+        });
 		// let's create our basemap! -- ##1 here
 
 		map = L.map('map').setView([39.73934, -104.99237], 11);
@@ -169,14 +181,9 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 		
-$("#appear").click(function() {
-           // if someone clicks on appear, this runs!
-           console.log("someone clicked on button appear.");
-         $("#hidden_text").text("Map by Katie McGhee");
-        });
 
-		$("button").click(function(){
-		  $("#div1").fadeToggle();
+
+	
 
 });
 		
@@ -185,6 +192,7 @@ $("#appear").click(function() {
 
 </script>
 </head>
+	
 <body>
 
 
@@ -193,17 +201,16 @@ $("#appear").click(function() {
 	<h2><a href="https://www.census.gov/programs-surveys/acs">Denver Neighborhood Median Household Income 2021 Census data</a></h2>
 	<p>Data from <a href="https://denvergov.org/opendata/dataset/city-and-county-of-denver-american-community-survey-blk-grp-2017-2021">Denver Open Data</a></p>
 </div>
-	<button>Click for additional info/button><br><br>
+	
+	<div id="hidden_text">
+     <button id="appear">Map author</button>
+      </div>
 
-	<div id="div1"
-		style="width:20px;height:80px;background-color:red;">	
-		</div>
+	
 <div id="map"></div>
 	
 	
-	<div id="hidden_text">
-     <button id="appear">Click for map author!</button>
-      </div>
+
 
 	
 
