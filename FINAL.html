@@ -56,7 +56,7 @@
  
 		///GOOOD add something about money
 	</style>
-//GOOD GOOD DONE WITH THE STYLE
+// GOOD GOOD DONE WITH THE STYLE
 <script>
 
         // the document ready wraps our javascript
@@ -171,6 +171,11 @@ $("#appear").click(function() {
            console.log("someone clicked on button appear.");
          $("#hidden_text").text("I love raspberry macarons. I am on the quest for key lime macarons.");
         });
+
+		$("button").click(function(){
+  $("#div1").fadeToggle();
+
+});
 		
 	// end document ready
 	});
@@ -186,9 +191,17 @@ $("#appear").click(function() {
 </div>
 <div id="map"></div>
 	
+	
 	<div id="hidden_text">
      <button id="appear">Click here to see the hidden text!</button>
       </div>
+
+	<button>Click to fade in/out boxes</button><br><br>
+
+	
+		<div id="div1"
+		style="width:80px;height:80px;background-color:red;">	
+		</div>
 
 
 </body>
