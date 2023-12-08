@@ -71,6 +71,14 @@
 </head>
 	
 
+<body> 
+	
+<div id="map"></div>     
+	$("#appear").click(function() {
+           // if someone clicks on appear, this runs!
+           console.log("someone clicked on button appear.");
+         $("#hidden_text").text("Katie McGhee");
+        });
 	
 <script>
 
@@ -183,10 +191,7 @@ legend.onAdd = function (map) {
 legend.addTo(map);
 	
 
-$("#appear").click(function() {
-           // if someone clicks on appear, this runs!
-           console.log("someone clicked on button appear.");
-         $("#hidden_text").text("Katie McGhee");
+
 
 	
 
@@ -195,9 +200,7 @@ $("#appear").click(function() {
 	});
 
 </script>
-</head>
-	
-<body>
+
 	
 
 
@@ -208,8 +211,7 @@ $("#appear").click(function() {
 </div>
 	
 
-<div id="map"></div>
-	
+
 <div id="hidden_text">
      <button id="appear">Click for map author</button>
       </div>
