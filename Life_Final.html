@@ -75,12 +75,15 @@
 //function to style my choropleth map
 		function style1(feature) {
 	d =feature.properties.LIFE_EXPEC;
-			answer = d < 75.5 ? '#800026' : 
-				  d < 78.5 ? '#DB0026' : 
-				  d < 80.5 ? '#E31A1C' : 
-				  d < 82.7 ? '#FC4E2A' : 
-				  d < 85.9 ? '#FD8D3C' : 
-				'#FEB24C';
+			answer = 
+			d>85  ?  '#9ebcda' :
+			d>82.7  ? '#8c96c6' :
+			d>80.5  ? '#8c6bb1'
+			d>78.5 ?  '#88419d' :
+			d>75.5 ? '#810f7c' :
+			d>73.5 ?  '#4d004b':
+				'#f7fcfd'; 
+				
 				
 					
 styleReturn = {
