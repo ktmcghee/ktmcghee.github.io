@@ -96,18 +96,16 @@ styleReturn = {
 		}
 
 		
-		// let's add the Denver ACS data -- ##4 here
+// let's add the Denver Life expectancy data -- ##4 here
 	
-		$.getJSON('./life_expectancy_2010_2015.geojson', function(data) {
+	$.getJSON('./life_expectancy_2010_2015.geojson', function(data) {
 			//convert the file (data) into a layer
-			acsdenver2021Layer = L.geoJSON(data, 
-						       {style: style1, 
-							onEachFeature: function(feature,layer){	
-								layer.bindPopup("Life Expectancy:" + 
-										feature.properties.LIFE_EXPEC);
-										
-							}
-						       }
+		life_expectancy_2010_2015Layer = L.geoJSON(data, 
+			{style: style1, 
+			onEachFeature: function(feature,layer){	
+layer.bindPopup("Life Expectancy:" + feature.properties.LIFE_EXPEC);
+		}
+			}
 
                                      
 								).addTo(map);
